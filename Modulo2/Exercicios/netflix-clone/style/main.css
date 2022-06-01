@@ -1,0 +1,133 @@
+:root {
+    --vermelho:#E50914;
+    --preto:#141414;
+}
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'Bebas Neue', cursive;
+}
+
+/*Elementos base*/
+
+body {
+    background: var(--preto);
+    font-family:'Times New Roman', Times, serif;
+    color: white;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-size: 60px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+    font-size: 20px;
+    transition: .2s ease all;
+}
+
+header nav a:hover {
+    color: #fff;
+}
+
+/*Filme principal - representado, principalmente, pela classe "main-movie" e suas classes derivadas.*/
+
+.main-movie {
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('/Modulo2/Exercicios/netflix-clone/img/stranger-things.jpeg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    
+}
+
+.container {
+    padding: 15px;
+    margin-top: 10px;
+}
+
+.main-movie .container {
+    width: 80%;
+}
+
+.main-movie .main-movie-logo {
+    width: 400px;
+    height: 255px;
+}
+
+.main-movie-title {
+    font-size: 40px;
+    margin-top: 15%;
+    margin-left: 20px;
+    padding-top: 15px;
+    padding-right: 5px;
+    padding-left: 15px;
+    
+}
+
+.main-movie .main-movie-description {
+    
+    padding: 10px;
+    margin-left: 20px;
+    font-family: 'Arial Bold';
+    width: 90%;
+}
+
+.main-movie .buttons {
+    margin-left: 20px;
+    padding: 15px;
+}
+
+.main-movie-button {
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+    font-family: 'Arial Bold';
+    padding: 15px 100px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: .2s ease all;
+}
+
+.main-movie-button:hover {
+    background-color: white;
+    color: black;
+}
+
+.main-movie-button i {
+    margin-right: 8px;
+}
+
+.carousel-media {
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%);
+    padding: 20px;
+}
+
+.main-media {
+    font-family: 'Arial Bold';
+    padding-top: 5px;
+    padding-bottom: 15px;
+
+}
+
+.box-media {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
