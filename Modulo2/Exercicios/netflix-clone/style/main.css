@@ -7,7 +7,7 @@
     margin:0;
     padding: 0;
     box-sizing:border-box;
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Bebas Neue', cursive, 'Arial Black';
 }
 
 /*Elementos base*/
@@ -49,12 +49,13 @@ header nav a:hover {
     font-size: 16px;
     background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('/Modulo2/Exercicios/netflix-clone/img/stranger-things.jpeg');
     background-size: cover;
+    background-position: center;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
 
-    
 }
 
 .container {
@@ -63,12 +64,12 @@ header nav a:hover {
 }
 
 .main-movie .container {
-    width: 80%;
+    width: 90%;
 }
 
 .main-movie .main-movie-logo {
-    width: 400px;
-    height: 255px;
+    width: 480px;
+    height: 280px;
 }
 
 .main-movie-title {
@@ -113,6 +114,8 @@ header nav a:hover {
 .main-movie-button i {
     margin-right: 8px;
 }
+
+/* Elementos Populares - Carrossel de filmes e séries populares */
 
 .carousel-media {
     background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%);
